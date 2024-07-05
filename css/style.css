@@ -1,0 +1,146 @@
+:root{
+    --font-family: "Bebas Neue", sans-serif;
+    --primario: #dfdbdb;
+    --secundario:#979494;
+    --terceario: #000;
+    --blanco: #fff;
+    --amarillo: #e5e918;
+}
+
+body{
+    background-color: var(--primario);
+    font-family: var(--font-family);
+    font-size: 23px;
+    align-items: center;
+    text-align: center;
+}
+/*LOGO*/
+.logo{
+    text-decoration: none;
+    color: var(--terceario);
+    font-family: var(--font-family);
+    font-size: 60px;
+}
+/*ICONOS*/
+.top-right-icons{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 15px;
+}
+/*BARRA DE NAV*/
+.barra{
+    background-color: var(--blanco);
+  
+}
+.barra-cont{
+    display: flex;
+    justify-content: space-around;
+}
+.barra-cont a{
+    color: var(--secundario);
+    text-decoration: none;
+    font-size: 2rem;
+}
+.barra-cont a:hover{
+    background-color: var(--primario);
+    color: var(--terceario);
+}
+/*TEXTO SOBRE LA IMG PORTADA*/
+.texto{
+    font-family: "Lexend Zetta", sans-serif;
+    font-size: 55px;
+}
+/*IMAGEN PORTADA*/
+.imag{
+    width: 60%;
+    height: auto; 
+    border-radius: 8px;
+    position: relative; 
+}
+.imag-frase{
+    width: 100%;
+    color: var(--amarillo);
+    font-family: var(--font-family);
+    font-size: 80px;
+    position: absolute;
+    top: 170%;
+}
+.imag-frase-e{
+    font-family: var(--font-family);
+    font-size: 40px;
+}
+/* FORMULARIO*/
+.formulario{
+    width: 50%;
+    background-color: var(--blanco);
+    color: var(--secundario);
+    padding: 1.5rem;
+    border-radius: 0.5rem;  
+    position: relative;
+    left: 20rem; 
+    top: 1rem;   
+}
+.formulario fieldset{
+    border: none;
+
+}
+.formulario legend{
+    
+    font-size: larger;
+   color: var(--terceario);
+}
+/* FORMULARIO--CAMPOS LABEL*/
+.campo{
+    margin-bottom: 0.5rem;
+
+}
+.input-text{
+   display:block;
+   margin: 0 auto;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+/*BOTO ENVIAR*/
+.bton-enviar{
+    width: 15%;
+    text-align: center;
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 0.7rem;
+    font-family: "Lexend Zetta", sans-serif;
+    font-size: 10px;  
+}
+.bton-enviar:hover{
+    cursor: pointer;
+}
+/*EL FOOTER*/
+.footer{
+    font-size: 20px;
+}
+/*DISPOSITIVO RESPONSIVE*/
+@media (min-width: 480px) {
+}
+@media (min-width: 768px) {  
+}
+
+/*SECCION URBAN, PRETTY, ACCESORIOS*/
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(150px, 1fr)
+    );
+    gap: 32px;
+
+}
+.gallery img{
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px opx 30px #000;
+}
